@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '厕所总部',
-  tagline: '欢迎来到 toiletmc.net',
+  tagline: '高版本 Minecraft 服务器',
   url: 'https://toiletmc.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -38,14 +38,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ToiletMC/toiletmc.net/tree/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ToiletMC/toiletmc.net/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,70 +58,65 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: '厕所总部',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo32.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: '备忘录',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {to: '/blog', label: '博客', position: 'left'},
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '宣传',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'MCBBS',
+                href: 'https://www.mcbbs.net/thread-1385657-1-1.html',
+              },
+              {
+                label: '我的世界中文站',
+                href: 'https://www.minecraftzw.com/27108.htmll',
+              },
+              {
+                label: 'MC百科',
+                href: 'https://play.mcmod.cn/sv20183361.html',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '社区',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'QQ群聊',
+                href: 'https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/ToiletMC',
               },
             ],
           },
           {
-            title: 'More',
+            title: '其它',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '澜舟云',
+                href: 'https://mclzyun.com/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `版权所有 © ${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建。`,
       },
       prism: {
         theme: lightCodeTheme,
