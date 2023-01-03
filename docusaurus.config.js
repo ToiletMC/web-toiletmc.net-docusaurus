@@ -71,6 +71,11 @@ const config = {
             label: '备忘录',
           },
           {to: '/blog', label: '博客', position: 'left'},
+          {
+            href: 'https://afdian.net/a/ToiletMC',
+            label: '爱发电',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -80,12 +85,12 @@ const config = {
             title: '宣传',
             items: [
               {
-                label: 'MCBBS',
-                href: 'https://www.mcbbs.net/thread-1385657-1-1.html',
-              },
-              {
                 label: '我的世界中文站',
                 href: 'https://www.minecraftzw.com/27108.htmll',
+              },
+              {
+                label: 'MCBBS',
+                href: 'https://www.mcbbs.net/thread-1385657-1-1.html',
               },
               {
                 label: 'MC百科',
@@ -101,14 +106,22 @@ const config = {
                 href: 'https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1',
               },
               {
-                label: 'Github',
-                href: 'https://github.com/ToiletMC',
+                label: '爱发电',
+                href: 'https://afdian.net/a/ToiletMC',
+              },
+              {
+                label: 'Bilibili',
+                href: 'https://space.bilibili.com/1167348859',
               },
             ],
           },
           {
             title: '其它',
             items: [
+              {
+                label: 'Github',
+                href: 'https://github.com/ToiletMC',
+              },
               {
                 label: '澜舟云',
                 href: 'https://mclzyun.com/',

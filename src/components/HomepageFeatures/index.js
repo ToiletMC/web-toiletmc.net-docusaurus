@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '始终紧跟最新版本',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        紧跟 Minecraft 版本发布的脚步，为你来带最新的游戏体验，同时支持旧版本进入。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '持续运行 4 年',
+    Svg: require('@site/static/img/cake.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        服务器决不轻易跑路，在这几年中，服务器积累了一群数量相当可观的老玩家。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'PaperSpigot 强力驱动',
+    Svg: require('@site/static/img/paper-logo.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        高性能的 Minecraft 服务器基石，修复了许多原版中存在的漏洞，并包含性能改进。
       </>
     ),
   },
