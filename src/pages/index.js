@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            游戏地址：play.toiletmc.net
+            to="/docs/main">
+            开始游戏
           </Link>
         </div>
       </div>
