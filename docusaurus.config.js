@@ -40,13 +40,13 @@ const config = {
           editUrl:
             'https://github.com/ToiletMC/toiletmc.net/tree/main',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/ToiletMC/toiletmc.net/tree/main',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/ToiletMC/toiletmc.net/tree/main',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -66,11 +66,10 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'main',
             position: 'left',
-            label: '备忘录',
+            label: '文档',
           },
-          {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://afdian.net/a/ToiletMC',
             label: '爱发电',
