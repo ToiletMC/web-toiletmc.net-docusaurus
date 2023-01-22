@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '厕所总部',
-  tagline: '高版本 Minecraft 服务器',
+  tagline: '高版本 Minecraft 生存服务器',
   url: 'https://toiletmc.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
