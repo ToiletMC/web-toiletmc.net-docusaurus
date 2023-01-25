@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: '始终紧跟最新版本',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/drawing.svg').default,
     description: (
       <>
         紧跟 Minecraft 版本发布的脚步，为你来带最新的游戏体验，同时支持旧版本进入。
