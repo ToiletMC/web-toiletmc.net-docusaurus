@@ -84,6 +84,10 @@ const config = {
             title: '宣传',
             items: [
               {
+                label: '我的世界找服网',
+                href: 'https://www.fansmc.com/server/426.html',
+              },
+              {
                 label: '我的世界中文站',
                 href: 'https://www.minecraftzw.com/27108.html',
               },
