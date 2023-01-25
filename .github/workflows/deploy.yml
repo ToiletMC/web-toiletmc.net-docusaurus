@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy to GitHub Pages and Aliyun OSS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -36,5 +36,5 @@ jobs:
             accessKeySecret: ${{ secrets.ACCESSKEY_SECRET }}
             bucket: web-toiletmc
             # use your own endpoint
-            endpoint: https://web-toiletmc.oss-cn-hangzhou.aliyuncs.com
+            endpoint: oss-cn-hangzhou.aliyuncs.com
             folder: ./build
