@@ -128,7 +128,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © 2020-${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建。`,
+        copyright: `版权所有 © 2019-${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建。`,
       },
       prism: {
         theme: lightCodeTheme,
