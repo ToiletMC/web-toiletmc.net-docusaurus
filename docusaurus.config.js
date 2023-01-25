@@ -71,8 +71,8 @@ const config = {
             label: '文档',
           },
           {
-            href: 'https://afdian.net/a/ToiletMC',
-            label: '爱发电',
+            href: 'https://wiki.toiletmc.net',
+            label: '旧版文档',
             position: 'right',
           },
         ],
@@ -85,7 +85,7 @@ const config = {
             items: [
               {
                 label: '我的世界中文站',
-                href: 'https://www.minecraftzw.com/27108.htmll',
+                href: 'https://www.minecraftzw.com/27108.html',
               },
               {
                 label: 'MCBBS',
@@ -128,7 +128,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © ${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建。`,
+        copyright: `版权所有 © 2020-${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建。`,
       },
       prism: {
         theme: lightCodeTheme,
