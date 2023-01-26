@@ -132,7 +132,7 @@ const config = {
             ],
           },
         ],
-        copyright: `版权所有 © 2019-${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建 </br> <a href="https://beian.miit.gov.cn/" target=“_blank”>浙ICP备2021038660号-4</a>`,
+        copyright: `版权所有 © 2019-${new Date().getFullYear()} 厕所总部，使用 💙 和 Docusaurus 构建。 </br> <a href="https://beian.miit.gov.cn/" target=“_blank”>浙ICP备2021038660号-4</a>`,
       },
       prism: {
         theme: lightCodeTheme,
