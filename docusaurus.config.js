@@ -125,10 +125,6 @@ const config = {
                 label: 'Github',
                 href: 'https://github.com/ToiletMC',
               },
-              {
-                label: '澜舟云',
-                href: 'https://mclzyun.com/',
-              },
             ],
           },
         ],
