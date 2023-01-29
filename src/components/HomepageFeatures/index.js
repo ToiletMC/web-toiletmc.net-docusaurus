@@ -4,20 +4,20 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '始终紧跟最新版本',
+    title: '跟随最新版本',
     Svg: require('@site/static/img/drawing.svg').default,
     description: (
       <>
-        紧跟 Minecraft 版本发布的脚步，为你来带最新的游戏体验，同时支持旧版本进入。
+        紧跟 Minecraft 版本发布的脚步，为你来带最新的游戏体验。
       </>
     ),
   },
   {
-    title: '持续运行 4 年',
-    Svg: require('@site/static/img/cake.svg').default,
+    title: '累计运行 4 年',
+    Svg: require('@site/static/img/drawing.svg').default,
     description: (
       <>
-        服务器决不轻易跑路，在这几年中，服务器积累了一群数量相当可观的老玩家。
+        服务器不会轻易跑路，存档妥善保管，我们坚持带档升级。
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/paper-logo.svg').default,
     description: (
       <>
-        高性能的 Minecraft 服务器基石，修复了许多原版中存在的漏洞，并包含性能改进。
+        高性能 Minecraft 服务器基石，修复了许多原版漏洞，并包含性能改进。
       </>
     ),
   },

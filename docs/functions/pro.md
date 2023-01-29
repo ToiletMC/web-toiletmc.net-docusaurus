@@ -1,10 +1,10 @@
 # 💎 toilet+
 
-<div style={{ float: "right" }}>
+<div class="buy_pro">
     <img src="/img/toiletplus.jpg" width="300" />
     <a href="https://afdian.net/order/create?product_type=1&plan_id=ceb715ce251d11edb03452540025c377&sku=%5B%7B%22sku_id%22%3A%22ceb9c044251d11ed9a7752540025c377%22,%22count%22%3A1%7D%5D">
-        <div class="theme-admonition theme-admonition-danger alert alert--warning admonition_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-styles-module">
-            <div class="admonitionContent_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-styles-module">
+        <div class="theme-admonition theme-admonition-danger alert alert--warning admonition_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-styles-module" style={{ width: "19rem" }}>
+            <div class="admonitionContent_node_modules-@docusaurus-theme-classic-lib-theme-Admonition-styles-module" >
                 <h4>点击购买 toilet+ (￥25 / 月)</h4>
             </div>
         </div>
