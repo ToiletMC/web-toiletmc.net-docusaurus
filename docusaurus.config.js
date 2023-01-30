@@ -57,6 +57,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'baidu-site-verification', content: 'codeva-d6fSo3IqtI'}],
       navbar: {
         title: '厕所总部',
         logo: {
