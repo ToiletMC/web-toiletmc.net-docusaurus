@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={``} //Hello from ${siteConfig.title}
-      description="Description will go into a meta tag in <head />">
+      description="高版本 Minecraft 生存服务器">
       <HomepageHeader />
       <main>
       <HomepageFeatures />
