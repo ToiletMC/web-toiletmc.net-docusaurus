@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import MinecraftServerStatus from '@site/src/components/MinecraftServerStatus';
 
 import styles from './index.module.css';
 
@@ -18,7 +19,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/main">
-            开始游戏
+            和 <MinecraftServerStatus /> 名玩家一起游戏！
           </Link>
         </div>
       </div>

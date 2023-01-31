@@ -73,7 +73,7 @@ const config = {
             type: 'doc',
             docId: 'main',
             position: 'left',
-            label: '文档',
+            label: '帮助',
           },
           {
             href: 'https://wiki.toiletmc.net',
