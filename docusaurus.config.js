@@ -58,9 +58,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'baidu-site-verification', content: 'codeva-d6fSo3IqtI'},
-        {name: 'keywords', content: '我的世界, 厕所总部, Minecraft, MC, 服务器, 生存'}
-
+        {name: 'keywords', content: '我的世界, 厕所总部, Minecraft, MC, 服务器, 生存'},
+        {name: 'twitter:site', content: '厕所总部'}
       ],
       navbar: {
         title: '厕所总部',
