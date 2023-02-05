@@ -18,7 +18,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/main">
+            to="help">
             和 <MinecraftServerStatus /> 名玩家一起游戏！
           </Link>
         </div>

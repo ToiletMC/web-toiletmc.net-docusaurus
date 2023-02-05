@@ -35,8 +35,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          path: 'help',
+          routeBasePath: 'help',
           editUrl:
             'https://github.com/ToiletMC/toiletmc.net/tree/main',
         },
@@ -51,6 +51,20 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        editUrl:
+        'https://github.com/ToiletMC/toiletmc.net/tree/main',
+        // ……其他选项
+      },
     ],
   ],
 
@@ -70,9 +84,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'main',
+            docId: 'index',
             position: 'left',
             label: '帮助',
+          },
+          {
+            to: 'community',
+            position: 'left',
+            label: '社区',
+            activeBaseRegex: `/community/`,
           },
           {
             href: 'https://wiki.toiletmc.net',
