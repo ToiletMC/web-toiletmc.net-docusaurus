@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import QQGroup from '@site/src/components/QQGroup';
+
 # 🏠 首页
 
 欢迎来到一个奇怪的 Minecraft 服务器
@@ -18,7 +22,9 @@ sidebar_position: 1
 
 ## 服务器地址
 
-### Java 客户端通道
+<Tabs>
+<TabItem value="java" label="Java 版">
+
 Java 版同时支持两个地址进入服务器，你可以根据喜好选择。
 
 ```
@@ -28,11 +34,19 @@ play.toiletmc.net
 ```
 toiletmc.net
 ```
+
+</TabItem>
+<TabItem value="bedrock" label="基岩版">
+
 :::caution
 服务器暂不支持使用基岩版加入。
 :::
 
+</TabItem>
+</Tabs>
+
 ## 请求支援
 
-如果需要帮助，欢迎加入群组联系管理员。  
-* QQ群：[720737548](https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1)
+如果需要帮助，欢迎加入群组联系管理员。
+
+<QQGroup />
