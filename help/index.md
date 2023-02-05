@@ -14,7 +14,7 @@ sidebar_position: 1
 但为了你能够更好地体验游戏最新内容，我们推荐你使用最新版本进入游戏。
 
 服务器版本：[PaperSpigot](https://papermc.io) 1.19.3。  
-不强制使用正版，但是你依然可以使用正版账号游玩，并享受所有正版权益，详见[正版验证](functions/premium)。
+不强制使用正版，但是你依然可以使用正版账号游玩，并享受所有正版权益，详见[正版验证](/help/functions/premium)。
 
 ## 服务器地址
 
