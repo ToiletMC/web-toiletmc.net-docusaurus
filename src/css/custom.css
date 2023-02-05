@@ -4,6 +4,11 @@
  * work well for content-centric websites.
  */
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #0071c2;
