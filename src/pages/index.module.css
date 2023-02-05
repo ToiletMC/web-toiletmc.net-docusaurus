@@ -8,6 +8,9 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  flex: auto;
+  background-image: url("/img/3rd_photo.png");
+  background-position: center;
 }
 
 @media screen and (max-width: 996px) {

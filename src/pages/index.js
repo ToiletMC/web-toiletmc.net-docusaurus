@@ -35,7 +35,7 @@ export default function Home() {
       description="高版本 Minecraft 生存服务器">
       <HomepageHeader />
       <main>
-      <HomepageFeatures />
+      {/* <HomepageFeatures /> */}
       </main>
     </Layout>
   );
