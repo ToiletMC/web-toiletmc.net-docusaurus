@@ -22,9 +22,9 @@ export default function MinecraftServerStatus() {
   }, [])
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <span>[发生错误:{error.message}]</span>;
   } else if (!isLoaded) {
-    return 0;
+    return <span>[玩家数量加载中]</span>;
   } else {
     return (
       onlinePlayers
