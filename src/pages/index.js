@@ -34,9 +34,9 @@ export default function Home() {
       title={``} //Hello from ${siteConfig.title}
       description="高版本 Minecraft 生存服务器">
       <HomepageHeader />
-      <main>
-      {/* <HomepageFeatures /> */}
-      </main>
+      {/* <main>
+        <HomepageFeatures />
+      </main> */}
     </Layout>
   );
 }
