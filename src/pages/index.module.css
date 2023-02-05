@@ -19,6 +19,14 @@
   }
 }
 
+[data-theme='dark'] .heroTitle {
+  color: white;
+}
+
+[data-theme='dark'] .heroSubtitle {
+  color: white;
+}
+
 .buttons {
   display: flex;
   align-items: center;
