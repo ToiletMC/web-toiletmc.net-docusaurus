@@ -5,14 +5,27 @@
 
 ## ❓ 如何贡献
 
-小白教程：
+### 小白教程：
+
 1. 将本仓库 fork 到自己的 github 账号并下载文件到本地
-2. 在文件夹内运行命令 `npm run start`
+2. 在文件夹内运行命令 `npm install; npm run start`
 3. 编辑文件，浏览器转到 `localhost:3000` 实时预览页面
 4. 完成所有编辑工作后运行 `npm run build`，测试是否构建通过
 5. 将文件上传到自己仓库，然后向本仓库提交 pr
 
-上面的步骤不一定全都要做，你也可以根据自己的经验来操作。
+### 高手教程：
+
+```bash
+$ git clone https://github.com/<your-name>/toiletmc.net.git
+$ cd toiletmc.net
+$ cnpm i
+$ code .
+$ cnpm start
+$ # 完成编辑后……
+$ git commit -m "..."
+$ git push
+$ # 提交pr即可
+```
 
 ## ⚙️ 工作流程
 
