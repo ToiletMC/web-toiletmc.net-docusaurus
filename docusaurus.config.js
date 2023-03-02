@@ -70,10 +70,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [
-        {name: 'keywords', content: '我的世界, 厕所总部, Minecraft, MC, 服务器, 生存'},
-        {name: 'twitter:site', content: '厕所总部'}
-      ],
       navbar: {
         title: '厕所总部',
         logo: {

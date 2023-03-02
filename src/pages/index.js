@@ -31,8 +31,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={``} //Hello from ${siteConfig.title}
-      description="高版本 Minecraft 生存服务器">
+      title={`为了更美好的世界`}
+      description="厕所总部是一个创立于2019年8月15日的 Minecraft 服务器，紧跟最新的 Minecraft 版本同时提供粘液科技和魔法的全新玩法。有许多来玩过的玩家最后选择留在厕所总部，组成一个和谐友爱的游戏社区。">
       <HomepageHeader />
       <main>
       {/* <HomepageFeatures /> */}
