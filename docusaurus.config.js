@@ -18,7 +18,6 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ToiletMC', // Usually your GitHub org/user name.
   projectName: 'toiletmc.net', // Usually your repo name.
-  trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
