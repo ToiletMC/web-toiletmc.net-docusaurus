@@ -1,4 +1,4 @@
-# 厕所总部的网站
+# 厕所总部网站
 [![Deploy to Aliyun](https://github.com/ToiletMC/toiletmc.net/actions/workflows/deploy.yml/badge.svg)](https://github.com/ToiletMC/toiletmc.net/actions/workflows/deploy.yml)
 
 网站构建使用 [Docusaurus 2](https://docusaurus.io/zh-CN/)，一个现代化的静态网站生成器。浏览我们的站点：[toiletmc.net](https://toiletmc.net)
