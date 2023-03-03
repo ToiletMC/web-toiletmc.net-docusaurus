@@ -1,4 +1,4 @@
-name: Deploy to Aliyun
+name: Deploy to static server
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to Aliyun
+    name: Deploy to static server
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
       - name: Build website
         run: npm run build
           
-      - name: upload files to Aliyun
+      - name: upload files
         uses: fangbinwei/aliyun-oss-website-action@v1.3.1
         with:
             accessKeyId: ${{ secrets.ACCESSKEY_ID }}
