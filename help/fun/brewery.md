@@ -1,5 +1,5 @@
 ---
-title: 🍻 酿酒教程
+title: 🍺 酿酒教程
 description: 你可以在厕所总部中体验酿酒，喝醉。
 keywords: [酿酒, Brewery, 啤酒厂]
 ---
