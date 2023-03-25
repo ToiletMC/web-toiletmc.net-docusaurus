@@ -22,7 +22,7 @@ jobs:
         run: npm run build
           
       - name: upload files
-        uses: fangbinwei/aliyun-oss-website-action@v1.3.1
+        uses: fangbinwei/aliyun-oss-website-action@v1.4.0
         with:
             accessKeyId: ${{ secrets.ACCESSKEY_ID }}
             accessKeySecret: ${{ secrets.ACCESSKEY_SECRET }}
