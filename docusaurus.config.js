@@ -104,11 +104,6 @@ const config = {
             label: "社区",
             activeBaseRegex: `/community/`,
           },
-          {
-            href: "https://wiki.toiletmc.net",
-            label: "旧版文档",
-            position: "right",
-          },
         ],
       },
       footer: {
