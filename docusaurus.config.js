@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo64.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -89,7 +89,7 @@ const config = {
         title: "厕所总部",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo1024.png",
+          src: "img/logo64.png",
           style: { imageRendering: "pixelated", borderRadius: "5px" },
         },
         items: [
