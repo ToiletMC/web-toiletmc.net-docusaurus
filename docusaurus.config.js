@@ -89,7 +89,8 @@ const config = {
         title: "厕所总部",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo32.png",
+          src: "img/logo1024.png",
+          style: { imageRendering: "pixelated", borderRadius: "5px" },
         },
         items: [
           {
