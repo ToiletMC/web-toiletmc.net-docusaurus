@@ -155,6 +155,10 @@ const config = {
                 label: "Github",
                 href: "https://github.com/ToiletMC",
               },
+              {
+                label: "Gitee",
+                href: "https://gitee.com/toiletmc",
+              },
             ],
           },
         ],
