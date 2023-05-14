@@ -1,11 +1,18 @@
-# 厕所总部网站
+# 厕所总部の网站
 [![Deploy to Aliyun](https://github.com/ToiletMC/toiletmc.net/actions/workflows/deploy.yml/badge.svg)](https://github.com/ToiletMC/toiletmc.net/actions/workflows/deploy.yml)
 
-网站构建使用 [Docusaurus 2](https://docusaurus.io/zh-CN/)，一个现代化的静态网站生成器。浏览我们的站点：[toiletmc.net](https://toiletmc.net)
+如果你有兴趣帮助我们改进网站，或是添加一些内容，我们都欢迎━(*｀∀´*)ノ亻!  
+我们的网站完全使用 [Docusaurus 2](https://docusaurus.io/zh-CN/) 生成，一个现代化的静态网站生成器。浏览我们的站点：[toiletmc.net](https://toiletmc.net)
 
-## ❓ 如何贡献
+## 🤔 常见问题
 
-如果需要插入图片，建议压缩后再添加：[tinify.cn](https://tinify.cn)
+### 插入的图片太大了，浪费 CDN 流量怎么办？
+如果需要插入图片，建议压缩后再添加：[tinify.cn](https://tinify.cn)  
+
+### 访问 Github 太慢了，有时候根本连不上怎么办？
+可以使用国内的 [Gitee 镜像仓库](https://gitee.com/toiletmc/toiletmc.net)，两个仓库完全同步 :)
+
+## 🎖️ 如何贡献
 
 ### 小白教程：
 
