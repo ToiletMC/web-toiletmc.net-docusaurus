@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/rainbow512.png",
+  favicon: "img/logo512.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -88,8 +88,8 @@ const config = {
       navbar: {
         title: "厕所总部",
         logo: {
-          alt: "My Site Logo",
-          src: "img/rainbow512.png",
+          alt: "ToiletMC Logo",
+          src: "img/logo512.png",
           //imageRendering: "pixelated",
           style: { borderRadius: "5px" },
         },
