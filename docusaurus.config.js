@@ -46,7 +46,7 @@ const config = {
         //     'https://github.com/ToiletMC/toiletmc.net/tree/main',
         // },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
@@ -63,6 +63,7 @@ const config = {
         // ……其他选项
       },
     ],
+    'docusaurus-plugin-sass'
   ],
 
   themes: [
@@ -109,62 +110,83 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        // links: [
+        //   {
+        //     title: "宣传",
+        //     items: [
+        //       {
+        //         label: "我的世界找服网",
+        //         href: "https://www.fansmc.com/server/426.html",
+        //       },
+        //       {
+        //         label: "我的世界中文站",
+        //         href: "https://www.minecraftzw.com/27108.html",
+        //       },
+        //       {
+        //         label: "MCBBS",
+        //         href: "https://www.mcbbs.net/thread-1385657-1-1.html",
+        //       },
+        //       {
+        //         label: "MC百科",
+        //         href: "https://play.mcmod.cn/sv20183361.html",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "社区",
+        //     items: [
+        //       {
+        //         label: "QQ群聊",
+        //         href: "https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1",
+        //       },
+        //       {
+        //         label: "爱发电",
+        //         href: "https://afdian.net/a/ToiletMC",
+        //       },
+        //       {
+        //         label: "Bilibili",
+        //         href: "https://space.bilibili.com/1167348859",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "其它",
+        //     items: [
+        //       {
+        //         label: "Github",
+        //         href: "https://github.com/ToiletMC",
+        //       },
+        //       {
+        //         label: "Gitee",
+        //         href: "https://gitee.com/toiletmc",
+        //       },
+        //     ],
+        //   },
+        // ],
         links: [
           {
-            title: "宣传",
-            items: [
-              {
-                label: "我的世界找服网",
-                href: "https://www.fansmc.com/server/426.html",
-              },
-              {
-                label: "我的世界中文站",
-                href: "https://www.minecraftzw.com/27108.html",
-              },
-              {
-                label: "MCBBS",
-                href: "https://www.mcbbs.net/thread-1385657-1-1.html",
-              },
-              {
-                label: "MC百科",
-                href: "https://play.mcmod.cn/sv20183361.html",
-              },
-            ],
+            label: 'qq',
+            href: 'https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1',
           },
           {
-            title: "社区",
-            items: [
-              {
-                label: "QQ群聊",
-                href: "https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1",
-              },
-              {
-                label: "爱发电",
-                href: "https://afdian.net/a/ToiletMC",
-              },
-              {
-                label: "Bilibili",
-                href: "https://space.bilibili.com/1167348859",
-              },
-            ],
+            label: 'bilibili',
+            href: 'https://space.bilibili.com/1167348859',
           },
           {
-            title: "其它",
-            items: [
-              {
-                label: "Github",
-                href: "https://github.com/ToiletMC",
-              },
-              {
-                label: "Gitee",
-                href: "https://gitee.com/toiletmc",
-              },
-            ],
+            label: 'afdian',
+            href: 'https://afdian.net/a/ToiletMC',
+          },
+          {
+            label: 'broadcast',
+            href: 'https://twitter.com/docusaurus',
+          },
+          {
+            label: 'github',
+            href: 'https://github.com/ToiletMC',
           },
         ],
-        copyright: `版权所有 © 2019-${new Date().getFullYear()} 厕所总部<br/>
-        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011302000137">浙公网安备 33011302000137号</a><br/>
+        copyright: `Copyright © ${new Date().getFullYear()} toiletmc.net 保留所有权利。<br/>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011302000137">浙公网安备 33011302000137号</a>
         <a href="https://beian.miit.gov.cn/" target=“_blank”>浙ICP备2021038660号-4</a>`,
       },
       prism: {

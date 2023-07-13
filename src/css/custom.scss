@@ -1,0 +1,120 @@
+@import "fonts";
+@import "var";
+
+:root {
+  font-family: $base-font-family;
+  --ifm-font-family-base: $base-font-family;
+  --ifm-color-primary: #0071c2;
+  --ifm-color-primary-dark: #0066af;
+  --ifm-color-primary-darker: #0060a5;
+  --ifm-color-primary-darkest: #004f88;
+  --ifm-color-primary-light: #007cd5;
+  --ifm-color-primary-lighter: #0082df;
+  --ifm-color-primary-lightest: #0093fc;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #3faefd;
+  --ifm-color-primary-dark: #20a1fd;
+  --ifm-color-primary-darker: #109afd;
+  --ifm-color-primary-darkest: #0281db;
+  --ifm-color-primary-light: #5ebbfd;
+  --ifm-color-primary-lighter: #6ec2fd;
+  --ifm-color-primary-lightest: #9dd6fe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-footer-background-color: #e8e8e8;
+}
+
+.theme-doc-markdown {
+  --ifm-link-color: black;
+  --ifm-link-decoration: underline;
+  --ifm-link-hover-color: $theme-color;
+  --ifm-link-hover-decoration: unset;
+
+  a {
+    transition: 700ms ease;
+  }
+
+  a:visited {
+    color: $theme-color;
+  }
+}
+
+.buy_pro {
+  float: right;
+}
+
+.footer {
+  background-color: #e8e8e8;
+  color: #898989;
+
+  a {
+    color: #898989;
+    transition: 700ms ease;
+  }
+
+  a:hover {
+    color: $theme-color;
+  }
+
+  .footer__links {
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  .footer__link-item {
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+
+  .footer__link-item:hover {
+    text-decoration: none;
+  }
+
+  .footer__copyright {
+    text-align: left;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: unset;
+      color: unset;
+    }
+  }
+
+  .footer-icons {
+    vertical-align: bottom;
+  }
+
+  .custom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .buy_pro {
+    float: none;
+  }
+  .footer {
+    .footer__links {
+      margin-bottom: 1rem;
+    }
+    .footer__link-item {
+      display: unset;
+    }
+    .custom-footer {
+      display: unset;
+    }
+    .footer__copyright {
+      text-align: center;
+    }
+  }
+}
