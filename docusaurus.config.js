@@ -52,19 +52,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "community",
-        path: "community",
-        routeBasePath: "community",
-        editUrl: "https://github.com/ToiletMC/toiletmc.net/tree/main",
-        // ……其他选项
-      },
-    ],
-  ],
-
   themes: [
     // ... Your other themes.
     [
@@ -75,8 +62,8 @@ const config = {
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
         indexBlog: false,
-        docsRouteBasePath: ["help", "community"],
-        docsDir: ["help", "community"],
+        docsRouteBasePath: ["help"],
+        docsDir: ["help"],
         language: ["en", "zh"],
       },
     ],
@@ -100,12 +87,12 @@ const config = {
             position: "left",
             label: "帮助",
           },
-          {
-            to: "community",
-            position: "left",
-            label: "社区",
-            activeBaseRegex: `/community/`,
-          },
+          // {
+          //   to: "community",
+          //   position: "left",
+          //   label: "社区",
+          //   activeBaseRegex: `/community/`,
+          // },
         ],
       },
       footer: {
