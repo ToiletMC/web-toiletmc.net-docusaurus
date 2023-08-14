@@ -1,0 +1,11 @@
+.docPage {
+  display: flex;
+  width: 100%;
+  flex: 1 0;
+  justify-content: center;
+}
+
+.docsWrapper {
+  display: flex;
+  flex: 1 0 auto;
+}

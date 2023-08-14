@@ -1,9 +1,32 @@
 @import "fonts";
 @import "var";
 
+main {
+  max-width: unset !important;
+}
+
+.main-wrapper {
+  animation: fadeInAnimation ease 1.2s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  overflow: hidden; /* 隐藏整体滚动条 */
+}
+
 :root {
   font-family: $base-font-family;
   --ifm-font-family-base: $base-font-family;
+  --ifm-background-color: #eef0f1;
   --ifm-color-primary: #0071c2;
   --ifm-color-primary-dark: #0066af;
   --ifm-color-primary-darker: #0060a5;
@@ -13,6 +36,21 @@
   --ifm-color-primary-lightest: #0093fc;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-search-input-icon: url("/svg/search-icon.svg");
+
+  // Lemon 说 markdown 文章要款一点，所以变宽了↓
+  --ifm-container-width-xl: 1440px;
+
+  --ifm-toc-border-color: white;
+  --ifm-navbar-height: 0px;
+
+  // searchbar的修改：
+  --search-local-hit-active-color: #000;
+  --search-local-modal-background: #f4f6f7;
+  --search-local-hit-background: #f8f8f8;
+  --search-local-highlight-color: #e4e4e4;
+  --search-local-hit-shadow: none;
+  --search-local-hit-height: 40px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -26,7 +64,13 @@
   --ifm-color-primary-lightest: #9dd6fe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-footer-background-color: #e8e8e8;
+
+  --ifm-toc-border-color: #ffffff !important;
 }
+
+// .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module {
+//   position: fixed !important;
+// }
 
 .theme-doc-markdown {
   --ifm-link-color: black;
@@ -42,6 +86,28 @@
     color: $theme-color;
   }
 }
+
+.theme-doc-markdown img {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // transition: all 0.3s ease;
+  transform: scale(0.9);
+}
+
+.theme-doc-markdown
+  img[style="image-rendering: pixelated; border-radius: 5px;"] {
+  display: inline;
+}
+
+// markdown 的文档页面
+.padding-top--md {
+  padding-top: 2em !important;
+}
+
+// 原本是在这里对 SearchBar 进行修改的，但是他现在不在这里了。
+// 对 SearchBar 的修改，在 /theme/SearchBar/SearchBar.modele.css 中！
 
 .buy_pro {
   float: right;

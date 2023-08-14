@@ -1,0 +1,27 @@
+.breadcrumbsContainer {
+  --ifm-breadcrumb-size-multiplier: 0.8;
+  /* margin-bottom: 0.8rem; */
+  background-color: white;
+  border-radius: 15px;
+  height: 2.5rem;
+  align-items: center;
+}
+
+.flexMember {
+  flex-grow: 1;
+  align-self: center;
+}
+
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch {
+  align-self: center;
+  line-height: 0%;
+  margin-right: 1rem;
+  & img:hover {
+    cursor: pointer;
+  }
+}

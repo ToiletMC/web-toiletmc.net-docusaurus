@@ -1,0 +1,17 @@
+.docItemContainer header + *,
+.docItemContainer article > *:first-child {
+  margin-top: 0;
+}
+
+.docItemContainer {
+  max-height: calc(100vh - 11.85rem - 4em);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 2em;
+}
+
+@media (min-width: 997px) {
+  .docItemCol {
+    max-width: 75% !important;
+  }
+}

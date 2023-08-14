@@ -1,0 +1,173 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+$banner-img-height: 440px;
+$theme-color: #5b75ee;
+$animation-bannerup-duration: 0.7s;
+$banner-retract-distance: -300px;
+
+@keyframes bannerMovement {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+}
+
+.pauseAnimation {
+  animation-play-state: paused;
+}
+
+.heroBannerLayout {
+  transition: $animation-bannerup-duration ease;
+}
+
+.imgNavLayout {
+  transition: $animation-bannerup-duration ease;
+}
+
+.heroBanner {
+  // padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  // overflow: hidden;
+  flex: auto;
+  --ifm-link-color: #4f4f4f;
+  --ifm-link-hover-decoration: none;
+  --ifm-link-hover-color: #5b75ee;
+  // animation: bannerMovement 10s ease-in-out infinite;
+}
+
+.bannerUp {
+  transform: translateY($banner-retract-distance);
+}
+
+.bannerImgLayout {
+  position: relative;
+  width: 100%;
+  height: $banner-img-height;
+}
+
+.darkModeSwitch {
+  position: absolute;
+  height: 620px;
+  width: 3px;
+  background: $theme-color;
+  right: 10%;
+  top: -100px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 3px solid $theme-color;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    left: -7px;
+    bottom: -16.5px;
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pull {
+  animation: line 0.5s ease;
+}
+
+.bannerThemeShadow {
+  position: absolute;
+  top: $banner-img-height - 95px;
+  height: 100px;
+  width: 100%;
+  border-radius: 88px;
+  background: linear-gradient(
+    0.25turn,
+    rgb(89 113 232 / 0.1),
+    #5971e8,
+    rgb(89 113 232 / 0.1)
+  );
+  box-shadow: 0px 4px 60px 4px rgba(0, 0, 0, 0.05);
+  filter: blur(15px);
+}
+
+.bannerImgInnerShadow {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: $banner-img-height;
+  border-radius: 0px 0px 71px 71px;
+  box-shadow: 0px 4px 160px 30px rgba(0, 0, 0, 0.3) inset;
+  mix-blend-mode: color-burn;
+}
+
+.bannerImg {
+  position: absolute;
+  height: $banner-img-height;
+  width: 100%;
+  background: url("/img/banner.jpg"), lightgray 50% / cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 0px 71px 71px;
+  filter: drop-shadow(0px 3px 24px rgba(99, 104, 113, 0.31));
+}
+
+.mainNavLayout {
+  text-align: center;
+}
+
+.mainNavBox {
+  display: inline-flex;
+  border-radius: 0px 0px 20px 20px;
+  border-right: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7;
+  background-color: #fff;
+  background-blend-mode: screen;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2) inset;
+  span {
+    display: block;
+    padding: 0.4rem 2.5rem;
+  }
+}
+
+.searchBarLayout {
+  margin: 4rem auto;
+  transition: $animation-bannerup-duration ease;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    /* padding: 2rem 0.5rem; */
+  }
+}
+
+[data-theme="dark"] {
+  .heroTitle {
+    color: white;
+  }
+
+  .heroSubtitle {
+    color: white;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

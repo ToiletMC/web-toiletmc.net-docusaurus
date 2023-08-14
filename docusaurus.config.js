@@ -36,7 +36,9 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           path: "help",
           routeBasePath: "help",
-          editUrl: "https://github.com/ToiletMC/toiletmc.net/tree/main",
+          editUrl: "https://github.com/ToiletMC/web-toiletmc.net/tree/main",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         // blog: {
         //   showReadingTime: true,
@@ -63,7 +65,7 @@ const config = {
         // ……其他选项
       },
     ],
-    'docusaurus-plugin-sass'
+    "docusaurus-plugin-sass",
   ],
 
   themes: [
@@ -74,6 +76,7 @@ const config = {
       {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
+        searchBarShortcutHint: false,
         hashed: true,
         indexBlog: false,
         docsRouteBasePath: ["help", "community"],
@@ -110,79 +113,26 @@ const config = {
         ],
       },
       footer: {
-        // links: [
-        //   {
-        //     title: "宣传",
-        //     items: [
-        //       {
-        //         label: "我的世界找服网",
-        //         href: "https://www.fansmc.com/server/426.html",
-        //       },
-        //       {
-        //         label: "我的世界中文站",
-        //         href: "https://www.minecraftzw.com/27108.html",
-        //       },
-        //       {
-        //         label: "MCBBS",
-        //         href: "https://www.mcbbs.net/thread-1385657-1-1.html",
-        //       },
-        //       {
-        //         label: "MC百科",
-        //         href: "https://play.mcmod.cn/sv20183361.html",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "社区",
-        //     items: [
-        //       {
-        //         label: "QQ群聊",
-        //         href: "https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1",
-        //       },
-        //       {
-        //         label: "爱发电",
-        //         href: "https://afdian.net/a/ToiletMC",
-        //       },
-        //       {
-        //         label: "Bilibili",
-        //         href: "https://space.bilibili.com/1167348859",
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: "其它",
-        //     items: [
-        //       {
-        //         label: "Github",
-        //         href: "https://github.com/ToiletMC",
-        //       },
-        //       {
-        //         label: "Gitee",
-        //         href: "https://gitee.com/toiletmc",
-        //       },
-        //     ],
-        //   },
-        // ],
         links: [
           {
-            label: 'qq',
-            href: 'https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1',
+            label: "qq",
+            href: "https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1",
           },
           {
-            label: 'bilibili',
-            href: 'https://space.bilibili.com/1167348859',
+            label: "bilibili",
+            href: "https://space.bilibili.com/1167348859",
           },
           {
-            label: 'afdian',
-            href: 'https://afdian.net/a/ToiletMC',
+            label: "afdian",
+            href: "https://afdian.net/a/ToiletMC",
           },
           {
-            label: 'broadcast',
-            href: 'https://twitter.com/docusaurus',
+            label: "broadcast",
+            href: "#",
           },
           {
-            label: 'github',
-            href: 'https://github.com/ToiletMC',
+            label: "github",
+            href: "https://github.com/ToiletMC",
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} toiletmc.net 保留所有权利。<br/>
