@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Ark Pixel";
+  src: url("/fonts/ark-pixel/ark-pixel-12px-proportional-zh_cn.ttf")
+      format("truetype"),
+    url("/fonts/ark-pixel/ark-pixel-12px-proportional-zh_cn.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "zpix";
+  src: url("/fonts/zpix/zpix.ttf") format("truetype"),
+    url("/fonts/zpix/zpix.woff") format("woff"),
+    url("/fonts/zpix/zpix.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "monocraft";
+  src: url("/fonts/monocraft/Monocraft.ttf") format("truetype"),
+    url("/fonts/monocraft/Monocraft.woff") format("woff"),
+    url("/fonts/monocraft/Monocraft.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dinkiebitmap";
+  src: url("/fonts/dinkiebitmap/DinkieBitmap-9px.ttf") format("truetype"),
+    url("/fonts/dinkiebitmap/DinkieBitmap-9px.woff") format("woff"),
+    url("/fonts/dinkiebitmap/DinkieBitmap-9px.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/icomoon/icomoon.eot?8zdm2v");
+  src: url("/fonts/icomoon/icomoon.eot?8zdm2v#iefix")
+      format("embedded-opentype"),
+    url("/fonts/icomoon/icomoon.ttf?8zdm2v") format("truetype"),
+    url("/fonts/icomoon/icomoon.woff?8zdm2v") format("woff"),
+    url("/fonts/icomoon/icomoon.svg?8zdm2v#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-size: 18px;
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-afdian:before {
+  content: "\e900";
+}
+.icon-bilibili:before {
+  content: "\e901";
+}
+.icon-broadcast:before {
+  content: "\e902";
+}
+.icon-github:before {
+  content: "\e903";
+}
+.icon-qq:before {
+  content: "\e904";
+}

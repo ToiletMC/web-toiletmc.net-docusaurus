@@ -1,0 +1,22 @@
+/*font*/
+/*这里定义的变量，直接给 --ifm 赋值会有问题，我不知道为什么*/
+$base-font-family: dinkiebitmap, "iconmoon", -apple-system, BlinkMacSystemFont,
+  avenir next, avenir, helvetica, helvetica neue, ubuntu, roboto, noto, segoe ui,
+  arial, PingFang SC, Hiragino Sans GB, Noto Serif SC, Microsoft Yahei,
+  WenQuanYi Micro Hei, ST Heiti, sans-serif;
+
+/*color*/
+$theme-color: #5b75ee;
+
+/*weight
+$base-font-weight:一般文字的粗细;
+$blod-font-weight:粗体文字粗细;
+
+/*font-size
+$base-font-size:一般字体大小;
+$small_font-size:页脚大小;
+
+/*line-height
+$base-line-height:正文行距;
+$article-line-height:标题行距;
+*/

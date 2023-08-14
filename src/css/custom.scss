@@ -1,0 +1,194 @@
+@import "fonts";
+@import "var";
+
+main {
+  max-width: unset !important;
+}
+
+.main-wrapper {
+  animation: fadeInAnimation ease 1.2s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  overflow: hidden; /* 隐藏整体滚动条 */
+}
+
+:root {
+  --ifm-font-family-base: dinkiebitmap, "iconmoon", -apple-system,
+    BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu,
+    roboto, noto, segoe ui, arial, PingFang SC, Hiragino Sans GB, Noto Serif SC,
+    Microsoft Yahei, WenQuanYi Micro Hei, ST Heiti, sans-serif;
+  --ifm-background-color: #eef0f1;
+  --ifm-color-primary: #0071c2;
+  --ifm-color-primary-dark: #0066af;
+  --ifm-color-primary-darker: #0060a5;
+  --ifm-color-primary-darkest: #004f88;
+  --ifm-color-primary-light: #007cd5;
+  --ifm-color-primary-lighter: #0082df;
+  --ifm-color-primary-lightest: #0093fc;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-search-input-icon: url("/svg/search-icon.svg");
+
+  // Lemon 说 markdown 文章要款一点，所以变宽了↓
+  --ifm-container-width-xl: 1440px;
+
+  --ifm-toc-border-color: white;
+  --ifm-navbar-height: 0px;
+
+  // searchbar的修改：
+  --search-local-hit-active-color: #000;
+  --search-local-modal-background: #f4f6f7;
+  --search-local-hit-background: #f8f8f8;
+  --search-local-highlight-color: #e4e4e4;
+  --search-local-hit-shadow: none;
+  --search-local-hit-height: 40px;
+
+  --ifm-font-family-monospace: monocraft, dinkiebitmap, San Francisco Mono,
+    Monaco, consolas, lucida console, dejavu sans mono, bitstream vera sans mono,
+    monospace, mono;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #3faefd;
+  --ifm-color-primary-dark: #20a1fd;
+  --ifm-color-primary-darker: #109afd;
+  --ifm-color-primary-darkest: #0281db;
+  --ifm-color-primary-light: #5ebbfd;
+  --ifm-color-primary-lighter: #6ec2fd;
+  --ifm-color-primary-lightest: #9dd6fe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-footer-background-color: #e8e8e8;
+
+  --ifm-toc-border-color: #ffffff !important;
+}
+
+// .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module {
+//   position: fixed !important;
+// }
+
+.theme-doc-markdown {
+  --ifm-link-color: black;
+  --ifm-link-decoration: underline;
+  --ifm-link-hover-color: $theme-color;
+  --ifm-link-hover-decoration: unset;
+  font-size: 18px;
+  line-height: 1.4em;
+
+  a {
+    transition: 700ms ease;
+  }
+
+  a:visited {
+    color: $theme-color;
+  }
+}
+
+.theme-doc-markdown img {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // transition: all 0.3s ease;
+  transform: scale(0.9);
+}
+
+.theme-doc-markdown
+  img[style="image-rendering: pixelated; border-radius: 5px;"] {
+  display: inline;
+}
+
+// markdown 的文档页面
+.padding-top--md {
+  padding-top: 2em !important;
+}
+
+// 原本是在这里对 SearchBar 进行修改的，但是他现在不在这里了。
+// 对 SearchBar 的修改，在 /theme/SearchBar/SearchBar.modele.css 中！
+
+.buy_pro {
+  float: right;
+}
+
+.footer {
+  background-color: #e8e8e8;
+  color: #898989;
+
+  a {
+    color: #898989;
+    transition: 700ms ease;
+  }
+
+  a:hover {
+    color: $theme-color;
+  }
+
+  .footer__links {
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  .footer__link-item {
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+
+  .footer__link-item:hover {
+    text-decoration: none;
+  }
+
+  .footer__copyright {
+    text-align: left;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: unset;
+      color: unset;
+    }
+  }
+
+  .footer-icons {
+    vertical-align: bottom;
+  }
+
+  .custom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .buy_pro {
+    float: none;
+  }
+  .footer {
+    .footer__links {
+      margin-bottom: 1rem;
+    }
+    .footer__link-item {
+      display: unset;
+    }
+    .custom-footer {
+      display: unset;
+    }
+    .footer__copyright {
+      text-align: center;
+    }
+  }
+}
