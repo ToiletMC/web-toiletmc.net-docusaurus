@@ -24,8 +24,10 @@ body {
 }
 
 :root {
-  font-family: $base-font-family;
-  --ifm-font-family-base: $base-font-family;
+  --ifm-font-family-base: dinkiebitmap, "iconmoon", -apple-system,
+    BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu,
+    roboto, noto, segoe ui, arial, PingFang SC, Hiragino Sans GB, Noto Serif SC,
+    Microsoft Yahei, WenQuanYi Micro Hei, ST Heiti, sans-serif;
   --ifm-background-color: #eef0f1;
   --ifm-color-primary: #0071c2;
   --ifm-color-primary-dark: #0066af;
@@ -51,6 +53,10 @@ body {
   --search-local-highlight-color: #e4e4e4;
   --search-local-hit-shadow: none;
   --search-local-hit-height: 40px;
+
+  --ifm-font-family-monospace: monocraft, dinkiebitmap, San Francisco Mono,
+    Monaco, consolas, lucida console, dejavu sans mono, bitstream vera sans mono,
+    monospace, mono;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -77,6 +83,8 @@ body {
   --ifm-link-decoration: underline;
   --ifm-link-hover-color: $theme-color;
   --ifm-link-hover-decoration: unset;
+  font-size: 18px;
+  line-height: 1.4em;
 
   a {
     transition: 700ms ease;
