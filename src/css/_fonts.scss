@@ -28,6 +28,20 @@
 }
 
 @font-face {
+  font-family: "noto-color-emoji";
+  src: url("/fonts/noto-color-emoji/NotoColorEmoji-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "fusion-pixel";
+  src: url("/fonts/fusion-pixel/fusion-pixel-12px-proportional-zh_hans.ttf")
+      format("truetype"),
+    url("/fonts/fusion-pixel/fusion-pixel-12px-proportional-zh_hans.woff2")
+      format("woff2");
+}
+
+@font-face {
   font-family: "icomoon";
   src: url("/fonts/icomoon/icomoon.eot?8zdm2v");
   src: url("/fonts/icomoon/icomoon.eot?8zdm2v#iefix")

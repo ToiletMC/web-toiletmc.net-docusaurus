@@ -1,14 +1,12 @@
-@import "fonts";
-@import "var";
+@use "fonts";
+@use "config";
+@use "docpage";
+@use "footer";
 
-main {
-  max-width: unset !important;
-}
-
+/* 这是页面切换的过渡动画 */
 .main-wrapper {
   animation: fadeInAnimation ease 1.2s;
 }
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -19,15 +17,12 @@ main {
   }
 }
 
-body {
-  overflow: hidden; /* 隐藏整体滚动条 */
+/* ？我忘记了为什么写这个 */
+main {
+  max-width: unset !important;
 }
 
 :root {
-  --ifm-font-family-base: dinkiebitmap, "iconmoon", -apple-system,
-    BlinkMacSystemFont, avenir next, avenir, helvetica, helvetica neue, ubuntu,
-    roboto, noto, segoe ui, arial, PingFang SC, Hiragino Sans GB, Noto Serif SC,
-    Microsoft Yahei, WenQuanYi Micro Hei, ST Heiti, sans-serif;
   --ifm-background-color: #eef0f1;
   --ifm-color-primary: #0071c2;
   --ifm-color-primary-dark: #0066af;
@@ -38,25 +33,31 @@ body {
   --ifm-color-primary-lightest: #0093fc;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-navbar-search-input-icon: url("/svg/search-icon.svg");
+
+  // 自定义字体部分
+  --ifm-font-family-base: #{config.$base-font-family};
+  input {
+    font-family: config.$base-font-family;
+  }
 
   // Lemon 说 markdown 文章要款一点，所以变宽了↓
   --ifm-container-width-xl: 1440px;
 
-  --ifm-toc-border-color: white;
+  // 取消默认的导航栏
   --ifm-navbar-height: 0px;
 
-  // searchbar的修改：
+  // “取消”目录右边的线
+  --ifm-toc-border-color: white;
+
+  // 搜索框的修改
+  --ifm-font-family-monospace: fonts.$code-font-family;
+  --ifm-navbar-search-input-icon: url("/svg/search-icon.svg");
   --search-local-hit-active-color: #000;
   --search-local-modal-background: #f4f6f7;
   --search-local-hit-background: #f8f8f8;
   --search-local-highlight-color: #e4e4e4;
   --search-local-hit-shadow: none;
   --search-local-hit-height: 40px;
-
-  --ifm-font-family-monospace: monocraft, dinkiebitmap, San Francisco Mono,
-    Monaco, consolas, lucida console, dejavu sans mono, bitstream vera sans mono,
-    monospace, mono;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -74,46 +75,6 @@ body {
   --ifm-toc-border-color: #ffffff !important;
 }
 
-// .tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module {
-//   position: fixed !important;
-// }
-
-.theme-doc-markdown {
-  --ifm-link-color: black;
-  --ifm-link-decoration: underline;
-  --ifm-link-hover-color: $theme-color;
-  --ifm-link-hover-decoration: unset;
-  font-size: 18px;
-  line-height: 1.4em;
-
-  a {
-    transition: 700ms ease;
-  }
-
-  a:visited {
-    color: $theme-color;
-  }
-}
-
-.theme-doc-markdown img {
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  // transition: all 0.3s ease;
-  transform: scale(0.9);
-}
-
-.theme-doc-markdown
-  img[style="image-rendering: pixelated; border-radius: 5px;"] {
-  display: inline;
-}
-
-// markdown 的文档页面
-.padding-top--md {
-  padding-top: 2em !important;
-}
-
 // 原本是在这里对 SearchBar 进行修改的，但是他现在不在这里了。
 // 对 SearchBar 的修改，在 /theme/SearchBar/SearchBar.modele.css 中！
 
@@ -121,74 +82,8 @@ body {
   float: right;
 }
 
-.footer {
-  background-color: #e8e8e8;
-  color: #898989;
-
-  a {
-    color: #898989;
-    transition: 700ms ease;
-  }
-
-  a:hover {
-    color: $theme-color;
-  }
-
-  .footer__links {
-    margin-bottom: 0;
-    align-self: flex-end;
-  }
-
-  .footer__link-item {
-    text-decoration: none;
-    margin-right: 1rem;
-  }
-
-  .footer__link-item:hover {
-    text-decoration: none;
-  }
-
-  .footer__copyright {
-    text-align: left;
-    font-size: 0.8rem;
-
-    a {
-      text-decoration: underline;
-    }
-
-    a:hover {
-      text-decoration: unset;
-      color: unset;
-    }
-  }
-
-  .footer-icons {
-    vertical-align: bottom;
-  }
-
-  .custom-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 @media screen and (max-width: 996px) {
   .buy_pro {
     float: none;
-  }
-  .footer {
-    .footer__links {
-      margin-bottom: 1rem;
-    }
-    .footer__link-item {
-      display: unset;
-    }
-    .custom-footer {
-      display: unset;
-    }
-    .footer__copyright {
-      text-align: center;
-    }
   }
 }
