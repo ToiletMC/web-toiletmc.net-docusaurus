@@ -31,7 +31,7 @@ import {
   hideSearchBarWithNoSearchContext,
 } from "../../utils/proxiedGenerated";
 import LoadingRing from "../LoadingRing/LoadingRing";
-import styles from "./SearchBar.module.css";
+import styles from "./SearchBar.module.scss";
 import { SearchBarFocusedContext } from "../../hooks/SearchBarFocusedContext.js";
 async function fetchAutoCompleteJS() {
   const autoCompleteModule = await import("@easyops-cn/autocomplete.js");

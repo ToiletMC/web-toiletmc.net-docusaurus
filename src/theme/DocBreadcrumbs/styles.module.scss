@@ -1,10 +1,17 @@
+@use "/src/css/config";
+
 .breadcrumbsContainer {
   --ifm-breadcrumb-size-multiplier: 0.8;
-  /* margin-bottom: 0.8rem; */
-  background-color: white;
+  background-color: config.$markdown-background-color;
   border-radius: 15px;
   height: 2.5rem;
   align-items: center;
+}
+
+[data-theme="dark"] {
+  .breadcrumbsContainer {
+    background-color: config.$markdown-background-darkmode-color;
+  }
 }
 
 .flexMember {

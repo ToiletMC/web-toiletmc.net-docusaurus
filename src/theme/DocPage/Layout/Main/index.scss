@@ -1,0 +1,30 @@
+@use "/src/css/config";
+
+.customFlexWrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.customMainWrapper {
+  margin-right: 0px;
+  flex-grow: 1;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  background-color: config.$markdown-background-color;
+  // min-height: calc(100vh - 11.85rem);
+  // max-height: calc(100vh - 11.85rem);
+  // height: 100%;
+  border-radius: 15px;
+  width: calc(100% - 2rem);
+}
+
+[data-theme="dark"] {
+  .customMainWrapper {
+    background-color: config.$markdown-background-darkmode-color;
+  }
+}
+
+.customBreadcrumbsWrapper {
+  margin: 1rem;
+}

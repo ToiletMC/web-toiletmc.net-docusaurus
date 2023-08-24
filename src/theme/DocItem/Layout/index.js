@@ -36,7 +36,7 @@ export default function DocItemLayout({ children }) {
     <div className="row" style={{ justifyContent: "center" }}>
       <div
         className={clsx("col", !docTOC.hidden && styles.docItemCol)}
-        style={{ paddingRight: 0 }}
+        style={{ paddingRight: 0, marginLeft: "2em" }}
       >
         <DocVersionBanner />
         <div className={clsx(styles.docItemContainer, "thin-scrollbar")}>

@@ -1,8 +1,13 @@
 @use "config";
 
+[data-theme="dark"] .footer {
+  background-color: config.$footer-background-darkmode-color;
+  color: config.$footer-font-darkmode-color;
+}
+
 .footer {
-  background-color: #e8e8e8;
-  color: #898989;
+  background-color: config.$footer-background-color;
+  color: config.$footer-font-color;
 
   a {
     color: #898989;
@@ -54,8 +59,11 @@
 
 @media screen and (max-width: 996px) {
   .footer {
+    display: flex;
+    padding: 1em;
+
     .footer__links {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5em;
     }
     .footer__link-item {
       display: unset;
@@ -65,6 +73,7 @@
     }
     .footer__copyright {
       text-align: center;
+      font-size: 0.7rem;
     }
   }
 }

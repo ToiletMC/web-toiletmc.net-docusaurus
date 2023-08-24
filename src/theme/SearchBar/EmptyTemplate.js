@@ -1,6 +1,6 @@
 import { translate } from "@docusaurus/Translate";
 import { iconNoResults } from "./icons";
-import styles from "./SearchBar.module.css";
+import styles from "./SearchBar.module.scss";
 export function EmptyTemplate() {
     if (process.env.NODE_ENV === "production") {
         return `<span class="${styles.noResults}"><span class="${styles.noResultsIcon}">${iconNoResults}</span><span>${translate({

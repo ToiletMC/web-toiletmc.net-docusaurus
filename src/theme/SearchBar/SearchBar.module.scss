@@ -1,3 +1,5 @@
+@use "/src/css/config";
+
 .searchBar .dropdownMenu {
   left: auto !important;
   right: 0 !important;
@@ -122,8 +124,7 @@ html[data-theme="dark"] .noResultsIcon {
 
 .hitWrapper mark {
   background: none;
-  /* color: var(--search-local-highlight-color, var(--ifm-color-primary)); */
-  color: #000;
+  color: var(--search-local-highlight-font-color, var(--ifm-color-primary));
 }
 
 .hitTitle {
@@ -264,14 +265,13 @@ html[data-theme="dark"] .noResultsIcon {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   width: 30em;
   outline: none;
-  background-color: #f4f6f7;
   height: 2.9em;
 }
 :global(.navbar__search-input):hover {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28) !important;
 }
 :global(.navbar__search-input):not(:focus) {
-  border: 1px solid #dfe1e5;
+  border: 1px solid config.$searchbar-border-color;
   border-radius: 0.5rem;
   box-shadow: none;
 }
@@ -306,6 +306,15 @@ html[data-theme="dark"] .noResultsIcon {
 }
 .searchBar .dropdownMenu .suggestion {
   border-radius: unset;
+}
+
+[data-theme="dark"] {
+  :global(.navbar__search-input):not(:focus) {
+    border: 1px solid config.$searchbar-border-darkmode-color;
+  }
+  .hitPathNotTitle {
+    background-color: #313638;
+  }
 }
 /* XXY - 自定义部分结束 */
 

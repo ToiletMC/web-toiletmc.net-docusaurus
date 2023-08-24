@@ -2,9 +2,9 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+@use "/src/css/config";
 
 $banner-img-height: 440px;
-$theme-color: #5b75ee;
 $animation-bannerup-duration: 0.7s;
 $banner-retract-distance: -300px;
 
@@ -18,28 +18,14 @@ $banner-retract-distance: -300px;
   }
 }
 
-.pauseAnimation {
-  animation-play-state: paused;
-}
-
-.heroBannerLayout {
-  transition: $animation-bannerup-duration ease;
-}
-
 .imgNavLayout {
   transition: $animation-bannerup-duration ease;
 }
 
 .heroBanner {
-  // padding: 4rem 0;
   text-align: center;
   position: relative;
-  // overflow: hidden;
   flex: auto;
-  --ifm-link-color: #4f4f4f;
-  --ifm-link-hover-decoration: none;
-  --ifm-link-hover-color: #5b75ee;
-  // animation: bannerMovement 10s ease-in-out infinite;
 }
 
 .bannerUp {
@@ -56,7 +42,7 @@ $banner-retract-distance: -300px;
   position: absolute;
   height: 620px;
   width: 3px;
-  background: $theme-color;
+  background: config.$theme-color;
   right: 10%;
   top: -100px;
   cursor: pointer;
@@ -64,7 +50,7 @@ $banner-retract-distance: -300px;
   &::after {
     content: "";
     position: absolute;
-    border: 3px solid $theme-color;
+    border: 3px solid config.$theme-color;
     border-radius: 50%;
     width: 11px;
     height: 11px;
@@ -112,6 +98,7 @@ $banner-retract-distance: -300px;
   height: $banner-img-height;
   border-radius: 0px 0px 71px 71px;
   box-shadow: 0px 4px 160px 30px rgba(0, 0, 0, 0.3) inset;
+  // 混合模式有奇怪的马赛克，先注释掉。
   // mix-blend-mode: color-burn;
 }
 
@@ -128,15 +115,19 @@ $banner-retract-distance: -300px;
 
 .mainNavLayout {
   text-align: center;
+  color: config.$nav-text-color;
+
+  --ifm-link-color: #4f4f4f;
+  --ifm-link-hover-decoration: none;
+  --ifm-link-hover-color: #5b75ee;
 }
 
 .mainNavBox {
   display: inline-flex;
   border-radius: 0px 0px 20px 20px;
-  border-right: 1px solid #d7d7d7;
-  border-bottom: 1px solid #d7d7d7;
-  border-left: 1px solid #d7d7d7;
-  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  background-color: config.$navbar-background-color;
   background-blend-mode: screen;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2) inset;
   span {
@@ -151,23 +142,16 @@ $banner-retract-distance: -300px;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    /* padding: 2rem 0.5rem; */
-  }
 }
 
 [data-theme="dark"] {
-  .heroTitle {
-    color: white;
+  .mainNavLayout {
+    color: config.$nav-text-darkmode-color;
+    --ifm-link-color: #e6e6e6 !important;
   }
 
-  .heroSubtitle {
-    color: white;
-  }
-
-  .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .mainNavBox {
+    border: 1px solid #3b4043;
+    background-color: config.$navbar-background-darkmode-color;
   }
 }

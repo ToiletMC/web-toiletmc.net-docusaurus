@@ -1,0 +1,23 @@
+@use "/src/css/config";
+
+.customSidebarWrapper {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+
+  margin-right: 0;
+  background-color: config.$markdown-background-color;
+  border-radius: 15px;
+}
+
+[data-theme="dark"] {
+  .customSidebarWrapper {
+    background-color: config.$markdown-background-darkmode-color;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .customSidebarWrapper {
+    display: none;
+  }
+}

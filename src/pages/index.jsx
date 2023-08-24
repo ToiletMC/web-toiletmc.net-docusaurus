@@ -43,10 +43,7 @@ function HomepageHeader() {
       <header>
         <div className="container">
           <div className={clsx(styles.heroBannerLayout)}>
-            <div
-              className={styles.heroBanner}
-              style={{ animationPlayState: isFocused ? "paused" : "running" }}
-            >
+            <div className={styles.heroBanner}>
               <div
                 className={clsx(
                   styles.imgNavLayout,

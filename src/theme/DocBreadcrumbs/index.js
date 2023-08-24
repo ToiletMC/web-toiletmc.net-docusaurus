@@ -8,7 +8,7 @@ import {
 import Link from "@docusaurus/Link";
 import { translate } from "@docusaurus/Translate";
 import HomeBreadcrumbItem from "@theme/DocBreadcrumbs/Items/Home";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 // TODO move to design system folder
 function BreadcrumbsItemLink({ children, href, isLast }) {
   const className = "breadcrumbs__link";

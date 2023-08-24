@@ -4,7 +4,7 @@ import { highlight } from "../../utils/highlight";
 import { highlightStemmed } from "../../utils/highlightStemmed";
 import { explicitSearchResultPath } from "../../utils/proxiedGenerated";
 import { iconAction, iconContent, iconHeading, iconTitle, iconTreeInter, iconTreeLast, } from "./icons";
-import styles from "./SearchBar.module.css";
+import styles from "./SearchBar.module.scss";
 export function SuggestionTemplate({ document, type, page, metadata, tokens, isInterOfTree, isLastOfTree, }) {
     const isTitle = type === 0;
     const isHeading = type === 1;
