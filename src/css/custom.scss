@@ -36,6 +36,7 @@ main {
 
   // 自定义字体部分
   --ifm-font-family-base: #{config.$base-font-family};
+  --ifm-font-family-monospace: fonts.$code-font-family;
   input {
     font-family: config.$base-font-family;
   }

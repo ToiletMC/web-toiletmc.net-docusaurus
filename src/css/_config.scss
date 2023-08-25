@@ -10,7 +10,7 @@ $code-font-family: monocraft, dinkiebitmap, San Francisco Mono, Monaco, consolas
 /*color*/
 $theme-color: #5b75ee;
 $global-background-color: #eef0f1;
-$global-background-darkmode-color: #181a1b;
+$global-background-darkmode-color: rgb(34, 35, 36);
 
 $navbar-background-color: #fff;
 $navbar-background-darkmode-color: #181a1b;
@@ -25,11 +25,11 @@ $searchbar-border-color: #dfe1e5;
 $searchbar-border-darkmode-color: #383d3f;
 
 $markdown-background-color: white;
-$markdown-background-darkmode-color: #181a1b;
+$markdown-background-darkmode-color: rgb(40, 41, 42);
 
 $footer-background-color: #e8e8e8;
+$footer-background-darkmode-color: rgb(45, 47, 48);
 $footer-font-color: #898989;
-$footer-background-darkmode-color: #25282a;
 $footer-font-darkmode-color: #898989;
 
 /*weight

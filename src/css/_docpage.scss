@@ -38,3 +38,9 @@
 .padding-bottom--md {
   padding-top: 2em !important;
 }
+
+[data-theme="dark"] {
+  .theme-doc-markdown {
+    --ifm-link-color: var(--ifm-color-content);
+  }
+}
