@@ -48,7 +48,7 @@ main {
   --ifm-navbar-height: 0px;
 
   // “取消”目录右边的线
-  --ifm-toc-border-color: #{config.$markdown-background-color};
+  --ifm-toc-border-color: transparent;
 
   // 搜索框的修改
   --ifm-navbar-search-input-background-color: #{config.$searchbar-background-color};
@@ -86,7 +86,7 @@ main {
   --search-local-hit-color: #fff;
 
   // “取消”目录右边的线
-  --ifm-toc-border-color: #{config.$markdown-background-darkmode-color} !important;
+  --ifm-toc-border-color: transparent !important;
 }
 
 // 原本是在这里对 SearchBar 进行修改的，但是他现在不在这里了。
