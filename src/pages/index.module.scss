@@ -99,14 +99,14 @@ $banner-retract-distance: -300px;
   border-radius: 0px 0px 71px 71px;
   box-shadow: 0px 4px 160px 30px rgba(0, 0, 0, 0.3) inset;
   // 混合模式有奇怪的马赛克，先注释掉。
-  // mix-blend-mode: color-burn;
+  mix-blend-mode: color-burn;
 }
 
 .bannerImg {
   position: absolute;
   height: $banner-img-height;
   width: 100%;
-  background: url("/img/banner.webp"), lightgray 50% / cover no-repeat;
+  background: url("/img/banner/random-banner-1.png"), lightgray 50% / cover no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 0px 0px 71px 71px;
