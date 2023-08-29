@@ -70,7 +70,9 @@ function HomepageHeader() {
                     <Link to="help">
                       <span>指南</span>
                     </Link>
-                    <span>关于</span>
+                    <Link to="about">
+                      <span>关于</span>
+                    </Link>
                   </div>
                 </div>
               </div>
