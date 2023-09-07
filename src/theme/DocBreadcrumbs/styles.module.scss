@@ -2,10 +2,11 @@
 
 .breadcrumbsContainer {
   --ifm-breadcrumb-size-multiplier: 0.8;
-  background-color: config.$markdown-background-color;
-  border-radius: 15px;
-  height: 2.5rem;
   align-items: center;
+  border-radius: 15px;
+  background-color: config.$markdown-background-color;
+  padding: 0.25rem 0;
+  min-height: 2.5rem;
 }
 
 [data-theme="dark"] {
@@ -26,8 +27,8 @@
 
 .switch {
   align-self: center;
-  line-height: 0%;
   margin-right: 1rem;
+  line-height: 0%;
   & img:hover {
     cursor: pointer;
   }
