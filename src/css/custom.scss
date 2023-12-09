@@ -3,7 +3,12 @@
 @use "docpage";
 @use "footer";
 
-/* 这是页面切换的过渡动画 */
+* {
+  // 用border-box，不要calc了
+  box-sizing: border-box;
+}
+
+// 页面切换的过渡动画
 .main-wrapper {
   animation: fadeInAnimation ease 1.2s;
 }
@@ -17,7 +22,7 @@
   }
 }
 
-/* ？我忘记了为什么写这个 */
+// 让内容区域占满宽度
 main {
   max-width: unset !important;
 }

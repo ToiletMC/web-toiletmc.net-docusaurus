@@ -21,10 +21,8 @@
 }
 
 @font-face {
-  font-family: "dinkiebitmap";
-  src: url("/fonts/dinkiebitmap/DinkieBitmap-9px.woff2") format("woff2"),
-    url("/fonts/dinkiebitmap/DinkieBitmap-9px.woff") format("woff"),
-    url("/fonts/dinkiebitmap/DinkieBitmap-9px.ttf") format("truetype");
+  font-family: "unifont";
+  src: url("/fonts/unifont/unifont-15.1.04.otf") format("otf");
 }
 
 @font-face {
