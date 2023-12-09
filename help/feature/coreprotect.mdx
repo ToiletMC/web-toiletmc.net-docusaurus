@@ -1,7 +1,7 @@
 ---
 title: 🛡️ 检查器
 description: 领地保护，物资失踪可能是成员所为。使用检查器查询物品记录，甚至方块破坏记录，轻松追踪犯罪者。使用/co i打开检查器，左键方块查询放置破坏记录，右键容器查询存储记录。注意保护粘液机器。
-keywords: [检查器, 核心保护, CoreProtect]
+keywords: [检查器, 核心保护, CoreProtect, coi]
 ---
 
 :::info 这篇内容由社区编写，欢迎你帮助我们编写！
@@ -17,10 +17,30 @@ keywords: [检查器, 核心保护, CoreProtect]
 
 ## 破坏/放置检测
 
-![](/img/coreprotect/place_break.png)
+```diff
++ lestery123 放置 netherite_block。
+- lestery123 破坏 netherite_block。
++ lestery123 放置 netherite_block。
++ ZLY 放置 water。
++ ZLY 放置 water。
+```
 
 ## 容器提取/存储检测
 
-![](/img/coreprotect/container.png)
+```diff
++ lestery123 放入 x896 iron_block。
++ lestery123 放入 x64 iron_block。
++ lestery123 放入 x512 iron_block。
+- softnightmare 取出 x192 iron_block。
+- softnightmare 取出 x256 iron_block。
++ softnightmare 放入 x64 iron_block。
+- softnightmare 取出 x64 iron_block。
+```
+
+## Crepper?
+
+```diff
+- #crepper 破坏 netherite_block。
+```
 
 在使用完检测器后要记得再输入一遍 `/co i` 来关闭检测器，当出现 `检测器已禁用` 时代表着检测器被关闭了。
