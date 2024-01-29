@@ -136,7 +136,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} 厕所总部<br/>
+      copyright: `Copyright © ${new Date().getFullYear()} toiletmc.net 保留所有权利。<br/>
       <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011302000137">浙公网安备 33011302000137号</a><br/>
       <a href="https://beian.miit.gov.cn/" target=“_blank”>浙ICP备2021038660号-4</a>`,
     },
