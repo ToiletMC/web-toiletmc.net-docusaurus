@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #3faefd;
   --ifm-color-primary-dark: #20a1fd;
   --ifm-color-primary-darker: #109afd;
@@ -27,4 +27,20 @@
   --ifm-color-primary-lighter: #6ec2fd;
   --ifm-color-primary-lightest: #9dd6fe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 文档中的图片美化 */
+.theme-doc-markdown img {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* 防止文章作者头像变化 */
+.theme-doc-markdown
+  img[style="image-rendering: pixelated; border-radius: 5px;"] {
+  display: inline;
 }
