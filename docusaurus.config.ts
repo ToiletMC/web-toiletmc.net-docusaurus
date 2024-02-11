@@ -77,8 +77,8 @@ const config: Config = {
           label: "关于",
         },
         {
-          href: "https://github.com/ToiletMC",
-          label: "GitHub",
+          href: "http://qq.toiletmc.net",
+          label: "QQ群聊",
           position: "right",
         },
       ],
@@ -112,7 +112,7 @@ const config: Config = {
           items: [
             {
               label: "QQ群聊",
-              href: "https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1",
+              href: "http://qq.toiletmc.net",
             },
             {
               label: "爱发电",
