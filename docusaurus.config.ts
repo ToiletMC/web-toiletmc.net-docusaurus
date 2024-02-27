@@ -98,10 +98,6 @@ const config: Config = {
               href: "https://www.minecraftzw.com/27108.html",
             },
             {
-              label: "MCBBS",
-              href: "https://www.mcbbs.net/thread-1385657-1-1.html",
-            },
-            {
               label: "MC百科",
               href: "https://play.mcmod.cn/sv20183361.html",
             },
@@ -125,7 +121,7 @@ const config: Config = {
           ],
         },
         {
-          title: "其它",
+          title: "开源",
           items: [
             {
               label: "Github",
