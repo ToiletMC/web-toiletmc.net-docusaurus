@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Admonition from "@theme/Admonition";
+
 # 📃 介绍
 
 🙂 欢迎来到厕所总部！作为一个创立于 2019 年 8 月 15 日的 Minecraft 服务器，我们一直致力于提供最好的游戏体验。
@@ -12,88 +16,89 @@ sidebar_position: 1
 
 🥳 在这里，你可以找到一个充满活力、友好和融洽的社区。我们的管理员和志愿者们非常乐意帮助新玩家，并确保每个人都能拥有愉快的游戏体验。如果你正在寻找一个稳定、有趣、友好的 Minecraft 服务器，那么请加入我们吧！
 
-## 如何游玩？
+## 游玩前的准备
 
 服务器版本：1.20.4  
 我们允许使用 1.9.x - 最新 版本的客户端加入游戏。  
 但为了更好的游戏体验，我们鼓励你使用最新版本加入游戏。
 
-以下内容已被 [Paper](https://papermc.io/software/paper) 修复，我们通常不会开启：
+:::tip 与原版 Minecraft 不一样的行为
 
-- 破基岩
-- 任何刷物品的 BUG
+- 基岩不可被破坏
+- 末影人不可捡起蘑菇
+- 火势不可蔓延（仅限生存世界的荒野）
+- 苦力怕不可炸毁方块（仅限生存世界）
 
-以下内容已被关闭，我们通常不会开启：
+:::
 
-- 生存世界的火势蔓延、苦力怕炸毁方块
-- 所有世界的末影人拿起蘑菇
-
-以下内容已被启用，滥用将会被管理员封禁：
+:::caution 以下内容已被启用，滥用将会被管理员封禁
 
 - 活塞复制：包括 TNT 复制、地毯复制
 
-## 服务器地址
-
-### JAVA 版
-
-:::tip
-服务器不强制要求使用正版，但是你依然可以使用正版账号游玩，并享受所有正版权益(皮肤、披风、随意改名、免密登陆...)，详见[正版验证](/guide/feature/premium)。
 :::
 
-我们同时支持两个地址加入服务器，你可以根据喜好选择：
+## 即刻加入游戏
 
-```
-toiletmc.net
-```
+<Tabs>
+  <TabItem value="java" label="JAVA 版本" default>
+    <Admonition type="tip">
+      服务器不强制要求使用正版，但是你依然可以使用正版账号游玩，并享受所有正版权益(皮肤、披风、随意改名、免密登陆...)，详见[正版验证](/guide/feature/premium)。
+    </Admonition>
+    我们同时支持两个地址加入服务器，你可以根据喜好选择： 
+    
+    ```
+    toiletmc.net
+    ```
 
-```
-play.toiletmc.net
-```
+    ```
+    play.toiletmc.net
+    ```
 
-### 基岩版
+  </TabItem>
+  <TabItem value="bedrock" label="基岩版">
+    <Admonition type="tip">
+    - 使用基岩版客户端游玩服务器需要登录 Xbox 账户。
+    - 游玩前推荐进行账号链接，实现 JAVA-基岩 玩的是同一个账号。   
+    </Admonition>
+    服务器支持使用最新版基岩客户端加入游戏，请使用我们官方提供的间歇泉通道，服务器地址：
 
-:::tip
+    ```
+    be.toiletmc.net
+    ```
 
-- 使用基岩版客户端游玩服务器需要登录 Xbox 账户。
-- 游玩前推荐进行账号链接，实现 JAVA-基岩 玩的是同一个账号。
-  :::
+    服务器端口：
 
-服务器支持使用最新版基岩客户端加入游戏，请使用我们官方提供的间歇泉通道，服务器地址：
+    ```
+    29239
+    ```
 
-```
-be.toiletmc.net
-```
+  </TabItem>
+  <TabItem value="account-link" label="账号链接">
+    #### 对于拥有 JAVA 正版账户的玩家
+    
+    - 请优先前往 https://link.geysermc.org 进行账号链接。
 
-服务器端口：
+    #### 对于使用离线模式或网络不佳玩家
+    1. 提前启动 JAVA 版和基岩版客户端，做好准备。
+    2. 先使用 JAVA 版客户端加入服务器，注册并登陆后输入指令：`/linkaccount Xbox玩家代号`，你将会收到一个验证码。
+    3. 使用基岩版加入服务器，然后输入指令：`/linkaccount JAVA版游戏名 验证码`。
+    4. 恭喜你已经完成了账号链接，尽情游戏吧！
 
-```
-29239
-```
+    <Admonition type="tip">
+    - Xbox 玩家代号中包含空格，需要使用英文状态下的引号引起来，例如：`/linkaccount "Little Pig"`
+    - 账号链接后，如果您后悔了，可以随时使用指令取消账号链接：`/unlinkaccount`
+    </Admonition>
 
-### 账号链接指南
+    <Admonition type="caution">
+    账号链接完成后，JAVA 版账号将被设置为主要游玩账号，请将基岩版账号内的背包物品、领地以及其他财产转移后再进行账号链接！（如果操作失误，请使用指令取消链接：`/unlinkaccount`）
+    </Admonition>
 
-#### 对于拥有 JAVA 正版账户的玩家
-
-- 请优先前往 https://link.geysermc.org 进行账号链接。
-
-#### 对于使用离线模式或网络不佳玩家
-
-1. 需要在本服先使用 JAVA 版客户端登录，注册并登陆后输入指令：`/linkaccount Xbox玩家代号`
-2. 使用基岩版加入服务器，然后输入指令：`/linkaccount JAVA版游戏名 验证码`
-3. 恭喜你已经完成了账号链接，尽情游戏吧！
-
-:::caution
-账号链接完成后，JAVA 版账号将被设置为主要游玩账号，请将基岩版账号内的背包物品、领地以及其他财产转移后再进行账号链接！（如果操作失误，请使用指令取消链接：`/unlinkaccount`）
-:::
-
-:::tip
-
-- Xbox 玩家代号中包含空格，需要使用英文状态下的引号引起来，例如：`/linkaccount "Little Pig"`
-- 账号链接后，如果您后悔了，可以随时使用指令取消账号链接：`/unlinkaccount`
-  :::
+  </TabItem>
+</Tabs>
 
 ## 请求支援
 
-如果需要帮助，欢迎加入群组联系管理员。
+如果需要帮助，请随时联系我们 😉！
 
 - QQ 群：[720737548](https://jq.qq.com/?_wv=1027&k=Uc4Zt2F1)
+- 电子邮件：hi@toiletmc.net

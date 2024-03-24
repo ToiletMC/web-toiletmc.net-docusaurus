@@ -38,8 +38,6 @@ const config: Config = {
           path: "guide",
           routeBasePath: "guide",
           editUrl: "https://github.com/ToiletMC/web-toiletmc.net/tree/main",
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
         },
         // blog: {
         //   showReadingTime: true,
