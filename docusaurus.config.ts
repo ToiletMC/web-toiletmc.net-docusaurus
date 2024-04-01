@@ -131,6 +131,23 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: "更多",
+          items: [
+            {
+              label: "建议反馈",
+              href: "https://support.qq.com/products/49264",
+            },
+            {
+              label: "维护日志",
+              to: "changelog",
+            },
+            {
+              label: "处罚记录",
+              to: "punishment",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} toiletmc.net 保留所有权利。<br/>
       <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011302000137">浙公网安备 33011302000137号</a><br/>
