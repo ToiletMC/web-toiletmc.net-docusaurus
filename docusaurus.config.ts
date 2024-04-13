@@ -54,7 +54,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    algolia: {
+      appId: "1Q1C9VU3SX",
+      apiKey: "e301f3f8b4684cd3b2eab10cc4cdbff5",
+      indexName: "toiletmc",
+      contextualSearch: true,
+    },
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "厕所总部",
