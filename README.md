@@ -3,7 +3,7 @@
 [![Deploy to Aliyun](https://github.com/ToiletMC/toiletmc.net/actions/workflows/deploy.yml/badge.svg)](https://github.com/ToiletMC/toiletmc.net/actions/workflows/deploy.yml)
 
 如果你有兴趣帮助我们改进网站，或是添加一些内容，我们都欢迎 ━(_｀ ∀´_)ノ亻!  
-我们的网站完全使用 [Docusaurus 2](https://docusaurus.io/zh-CN/) 生成，一个现代化的静态网站生成器。浏览我们的站点：[toiletmc.net](https://toiletmc.net)
+我们的网站完全使用 [Docusaurus](https://docusaurus.io/zh-CN/) 生成，一个现代化的静态网站生成器。浏览我们的站点：[toiletmc.net](https://toiletmc.net)
 
 ## 🤔 常见问题
 
