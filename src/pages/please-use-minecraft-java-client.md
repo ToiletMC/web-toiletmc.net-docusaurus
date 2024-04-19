@@ -8,4 +8,4 @@ title: 请使用 Minecraft 客户端
 
 :::
 
-![](/img/minecraft-client.png)
+![](/img/client-screens/java-client.png)
