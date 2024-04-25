@@ -81,7 +81,7 @@ const config: Config = {
         },
         {
           href: "http://qq.toiletmc.net",
-          label: "QQ群聊",
+          label: "加入Q群",
           position: "right",
         },
       ],
