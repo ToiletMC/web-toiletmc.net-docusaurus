@@ -39,7 +39,17 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-/* 防止文章作者头像变化 */
+/* markdown页面中的图片美化 */
+.mdx-page article img {
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* 防止文档中作者头像变化 */
 .theme-doc-markdown
   img[style="image-rendering: pixelated; border-radius: 5px;"] {
   display: inline;

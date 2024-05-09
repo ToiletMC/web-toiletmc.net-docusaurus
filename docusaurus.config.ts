@@ -75,6 +75,21 @@ const config: Config = {
           label: "帮助",
         },
         {
+          type: "dropdown",
+          label: "审核",
+          position: "right",
+          items: [
+            {
+              label: "绿色联盟",
+              to: "/review/green-alliance",
+            },
+            {
+              label: "建筑审核",
+              to: "/review/build",
+            },
+          ],
+        },
+        {
           to: "about",
           position: "left",
           label: "关于",
