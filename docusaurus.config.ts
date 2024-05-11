@@ -80,12 +80,16 @@ const config: Config = {
           position: "right",
           items: [
             {
-              label: "绿色联盟",
+              label: "🍀 绿色联盟",
               to: "/review/green-alliance",
             },
             {
-              label: "建筑审核",
+              label: "👷‍♀️ 建筑审核",
               to: "/review/build",
+            },
+            {
+              label: "📸 摄影师称号",
+              to: "/review/photographer",
             },
           ],
         },
