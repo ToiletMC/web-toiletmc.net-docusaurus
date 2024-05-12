@@ -94,9 +94,14 @@ const config: Config = {
           ],
         },
         {
-          to: "about",
+          to: "history",
           position: "left",
-          label: "关于",
+          label: "历史",
+        },
+        {
+          to: "thanks",
+          position: "left",
+          label: "鸣谢",
         },
         {
           href: "http://qq.toiletmc.net",
