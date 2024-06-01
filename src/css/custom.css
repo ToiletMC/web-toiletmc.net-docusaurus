@@ -40,7 +40,7 @@
 }
 
 /* markdown页面中的图片美化 */
-.mdx-page article img {
+.mdx-page article p img {
   border-radius: 10px;
   display: block;
   margin-left: auto;
