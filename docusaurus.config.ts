@@ -108,6 +108,11 @@ const config: Config = {
           label: "加入Q群",
           position: "right",
         },
+        {
+          href: "https://plan.toiletmc.net",
+          label: "玩家统计",
+          position: "right"
+        }
       ],
     },
     footer: {
