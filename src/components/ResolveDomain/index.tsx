@@ -11,7 +11,7 @@ const ResolveDomain: React.FC = () => {
         );
         const data = await response.json();
         if (data.Answer && data.Answer.length > 0) {
-          setIp(data.Answer[0].data);
+          setIp(data.Answer[data.Answer.length - 1].data);
         } else {
           setIp("IP地址查询失败");
         }
