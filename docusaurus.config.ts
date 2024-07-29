@@ -144,7 +144,7 @@ const config: Config = {
             },
             {
               label: "爱发电",
-              href: "https://afdian.net/a/ToiletMC",
+              href: "https://afdian.com/a/ToiletMC",
             },
             {
               label: "Bilibili",
